@@ -40,6 +40,8 @@ import org.json.JSONTokener;
  */
 public class OtherUtil
 {
+    public final static String WELCOME_MESSAGE = "WE ARE LIVE";
+
     public final static String NEW_VERSION_AVAILABLE = "There is a new version of JMusicBot available!\n"
                     + "Current version: %s\n"
                     + "New Version: %s\n\n"

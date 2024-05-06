@@ -74,7 +74,7 @@ public class JMusicBot
         Prompt prompt = new Prompt("JMusicBot");
         
         // startup checks
-        OtherUtil.checkVersion(prompt);
+//      OtherUtil.checkVersion(prompt);
         OtherUtil.checkJavaVersion(prompt);
         
         // load config
@@ -226,7 +226,8 @@ public class JMusicBot
                         new SetgameCmd(bot),
                         new SetnameCmd(bot),
                         new SetstatusCmd(bot),
-                        new ShutdownCmd(bot)
+                        new ShutdownCmd(bot),
+                        new ChatCmd(bot)
                 );
         
         // enable eval if applicable
