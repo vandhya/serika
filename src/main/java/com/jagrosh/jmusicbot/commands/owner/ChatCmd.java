@@ -35,6 +35,7 @@ public class ChatCmd extends OwnerCommand
         {
             User subject = bot.getJDA().retrieveUserById(msg[0]).complete();
             subject.openPrivateChannel().queue(pc -> pc.sendMessage(msg[1]).queue());
+            event.replySuccess("Message successfully sent!");
         }
         catch(Exception e)
         {
