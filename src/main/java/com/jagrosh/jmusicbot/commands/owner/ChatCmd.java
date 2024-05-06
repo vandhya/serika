@@ -16,7 +16,7 @@ public class ChatCmd extends OwnerCommand
     {
         this.bot = bot;
         this.name = "chat";
-        this.help = "sets the avatar of the bot";
+        this.help = "sends message to a given user id";
         this.arguments = "[userid] [msg]";
         this.aliases = bot.getConfig().getAliases(this.name);
         this.guildOnly = false;
