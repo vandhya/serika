@@ -39,7 +39,7 @@ public class ChatCmd extends OwnerCommand
         }
         catch(Exception e)
         {
-            event.reply(event.getClient().getError()+" Error!");
+            event.reply(event.getClient().getError()+" Error! args = " + msg[0] + " " + msg[1]);
         }
     }
 }
